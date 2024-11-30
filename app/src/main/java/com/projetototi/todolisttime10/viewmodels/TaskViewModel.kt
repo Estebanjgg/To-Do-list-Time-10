@@ -1,5 +1,3 @@
-
-// TaskViewModel.kt
 package com.projetototi.todolisttime10.viewmodels
 
 import android.app.Application

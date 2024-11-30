@@ -1,5 +1,3 @@
-
-// com/projetototi/todolisttime10/dao/TaskDao.kt
 package com.projetototi.todolisttime10.dao
 
 import androidx.room.*

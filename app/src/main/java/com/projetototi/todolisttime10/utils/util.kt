@@ -1,5 +1,3 @@
-
-// com/projetototi/todolisttime10/utils/util.kt
 package com.projetototi.todolisttime10.utils
 
 import android.app.Dialog
