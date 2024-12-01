@@ -9,7 +9,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="#B2DFDB">
 
         <!-- Título do Diálogo -->
         <TextView
@@ -50,8 +51,8 @@
 
             <!-- Campo de Título da Tarefa -->
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.App.TextInputLayout"
                 android:id="@+id/edTaskTitleL"
+                style="@style/Widget.App.TextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Digite o título da tarefa">
@@ -60,7 +61,7 @@
                     android:id="@+id/edTaskTitle"
                     android:layout_width="match_parent"
                     android:layout_height="?actionBarSize"
-                    android:background="@color/mainBackgroundColor"
+                    android:background="@color/white"
                     android:inputType="text"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gray" />
@@ -69,8 +70,8 @@
 
             <!-- Campo de Descrição da Tarefa -->
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.App.TextInputLayout"
                 android:id="@+id/edTaskDescL"
+                style="@style/Widget.App.TextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Inserir a descrição da tarefa">
@@ -79,7 +80,7 @@
                     android:id="@+id/edTaskDesc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/mainBackgroundColor"
+                    android:background="@color/white"
                     android:gravity="top|start"
                     android:inputType="textMultiLine"
                     android:lines="5"
@@ -92,13 +93,14 @@
             <!-- Botão para Atualizar a Tarefa -->
             <Button
                 android:id="@+id/updateTaskBtn"
+                style="@style/Widget.App.Button.Fill"
                 android:layout_width="wrap_content"
-                android:layout_height="?actionBarSize"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="4dp"
-                android:backgroundTint="@color/black"
-                style="@style/Widget.App.Button.Fill"
-                android:text="Atualizar tarefa"
+                android:backgroundTint="#FFCCBC"
+                android:text="Atualizar"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
         </LinearLayout>
     </RelativeLayout>

@@ -11,7 +11,8 @@
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#BBDEFB">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -21,13 +22,13 @@
             <!-- TextView de Boas-Vindas -->
             <TextView
                 android:id="@+id/welcomeTxt"
-                android:layout_width="wrap_content"
+                android:layout_width="277dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="16dp"
-                android:text="Bem-vindo de volta"
+                android:text="Gerenciador de tarefas"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textStyle="bold|italic" />
 
             <!-- TextView da Tarefa do Dia -->
             <TextView
@@ -37,26 +38,30 @@
                 android:layout_below="@id/welcomeTxt"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="4dp"
-                android:text="A tarefa de hoje"
-                android:textSize="28sp"
+                android:text="Lista de tarefas"
+                android:textAlignment="center"
+                android:textColor="#0B0A0A"
+                android:textColorLink="#8AC1A3"
+                android:textSize="34sp"
                 android:textStyle="bold" />
 
             <!-- Layout para Ícones de Ordenação e Visualização -->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="108dp"
                 android:layout_height="wrap_content"
                 android:layout_above="@id/edSearchL"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="10dp"
+                android:layout_marginBottom="8dp"
                 android:gravity="center"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/sortImg"
                     android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
                     android:src="@drawable/ic_sort" />
 
                 <ImageView
@@ -84,11 +89,15 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edSearch"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/white"
+                    android:layout_height="match_parent"
+                    android:background="#F3F1F1"
+                    android:fontFamily="@font/ubuntu_mono_regular"
                     android:hint="Digite o título da pesquisa"
                     android:imeOptions="actionSearch"
-                    android:inputType="text" />
+                    android:inputType="text"
+                    android:textColor="#0D0C0C"
+                    android:textSize="20sp"
+                    android:textStyle="normal" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -98,9 +107,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/edSearchL"
-                android:layout_centerHorizontal="true"
                 android:layout_marginHorizontal="10dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="27dp"
                 android:clipToPadding="false"
                 android:orientation="vertical"
                 android:overScrollMode="never"
@@ -113,12 +121,11 @@
     <!-- Botão Flutuante para Adicionar Tarefa -->
     <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
         android:id="@+id/addTaskFABtn"
-        android:layout_width="wrap_content"
+        android:layout_width="265dp"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/black"
-        android:text="Adicionar tarefa"
+        android:backgroundTint="#FABB05"
         android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold"

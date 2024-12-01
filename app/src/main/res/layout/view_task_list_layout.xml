@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginVertical="4dp"
     android:foreground="?android:attr/selectableItemBackground"
-    app:cardBackgroundColor="@color/white"
+    app:cardBackgroundColor="#C7E5C8"
     app:cardElevation="10dp">
 
     <RelativeLayout
@@ -29,7 +29,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Título"
-                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textColor="#0B60F2"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 

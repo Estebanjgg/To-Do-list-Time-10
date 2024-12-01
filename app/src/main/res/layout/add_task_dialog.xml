@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="10dp"
-    app:cardBackgroundColor="@color/white">
+    app:cardBackgroundColor="#B2DFDB">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -16,6 +16,8 @@
             android:id="@+id/titleTaskTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="false"
+            android:layout_centerHorizontal="true"
             android:layout_margin="16dp"
             android:text="Nova tarefa"
             android:textSize="24sp"
@@ -24,7 +26,7 @@
         <!-- Ícone de Fechar -->
         <ImageView
             android:id="@+id/closeImg"
-            android:layout_width="40dp"
+            android:layout_width="20dp"
             android:layout_height="40dp"
             android:layout_alignParentEnd="true"
             android:layout_margin="8dp"
@@ -46,12 +48,13 @@
             android:layout_centerHorizontal="true"
             android:layout_marginHorizontal="10dp"
             android:layout_marginVertical="8dp"
+            android:background="#B2DFDB"
             android:orientation="vertical">
 
             <!-- Campo de Título da Tarefa -->
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.App.TextInputLayout"
                 android:id="@+id/edTaskTitleL"
+                style="@style/Widget.App.TextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Inserir o título da tarefa">
@@ -60,7 +63,7 @@
                     android:id="@+id/edTaskTitle"
                     android:layout_width="match_parent"
                     android:layout_height="?actionBarSize"
-                    android:background="@color/mainBackgroundColor"
+                    android:background="#F1F2F4"
                     android:inputType="text"
                     android:textColor="@color/black"
                     android:textColorHint="@color/gray" />
@@ -69,8 +72,8 @@
 
             <!-- Campo de Descrição da Tarefa -->
             <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.App.TextInputLayout"
                 android:id="@+id/edTaskDescL"
+                style="@style/Widget.App.TextInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Inserir a descrição da tarefa">
@@ -79,7 +82,7 @@
                     android:id="@+id/edTaskDesc"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/mainBackgroundColor"
+                    android:background="#F1F2F4"
                     android:gravity="top|start"
                     android:inputType="textMultiLine"
                     android:lines="5"
@@ -92,14 +95,17 @@
             <!-- Botão para Salvar a Tarefa -->
             <Button
                 android:id="@+id/saveTaskBtn"
+                style="@style/Widget.App.Button.Fill"
                 android:layout_width="wrap_content"
-                android:layout_height="?actionBarSize"
+                android:layout_height="38dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="4dp"
-                android:backgroundTint="@color/black"
-                style="@style/Widget.App.Button.Fill"
-                android:text="Salvar tarefa"
-                android:textSize="20sp" />
+                android:background="#FBEAB4"
+                android:backgroundTint="#FFE0B2"
+                android:text="Salvar"
+                android:textColorLink="#FFE0B2"
+                android:textSize="20sp"
+                app:iconTint="#FFCCBC" />
         </LinearLayout>
     </RelativeLayout>
 </com.google.android.material.card.MaterialCardView>
